@@ -32,7 +32,12 @@ export default function App() {
         </SideMenu>
       </Slide>
       <MapContainer>
-        <IconButton aria-label='Open side menu' size='large' onClick={toggleMenu} open={isMenuOpen}>
+        <IconButton
+          aria-label='Open side menu'
+          size='large'
+          onClick={toggleMenu}
+          sx={{ '&:focus': { outline: 'none' } }}
+        >
           <Menu fontSize='large' />
         </IconButton>
       </MapContainer>
